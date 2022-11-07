@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const url = 'http://localhost:8000/posts';
-const url2 = 'http://localhost:8000/subCars';
-const url3 = 'http://localhost:8000/pulls';
-const url4 = 'http://localhost:8000/outnr';
-const url5 = 'http://localhost:8000/completed';
+const url = 'https://valetpro.herokuapp.com/posts';
+const url2 = 'https://valetpro.herokuapp.com/subCars';
+const url3 = 'https://valetpro.herokuapp.com/pulls';
+const url4 = 'https://valetpro.herokuapp.com/outnr';
+const url5 = 'https://valetpro.herokuapp.com/completed';
 
 
 export const createPost = (post) => axios.post(url, post);
