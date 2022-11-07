@@ -1,0 +1,149 @@
+body {
+    height: 85%;  
+    text-align: center;
+    margin: auto;
+}
+
+.main {
+   
+    margin:auto;
+    width: 100%;
+    top:4vh;
+    height:89vh;
+    position:fixed;    
+    overflow-x:auto; /* <!-- this is for horizontal scroll--> */  
+    text-align: center;
+    background-color: #292929;
+    color:#0ef306;
+     
+}
+h1{
+   
+    
+}
+.h1div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0vh 1vh;
+    margin-bottom: 15px;
+}
+.inprow {
+   display: flex;
+   justify-content:space-evenly;
+}
+form {
+    display:flex;
+    justify-content: center;
+    
+}
+
+ fieldset {
+    
+    background-color: black;
+    width: 50vh;
+    height: 60vh;
+    
+    margin:0 auto;
+  
+ }   
+ label {
+     color:azure
+     
+ }
+
+input, select {
+    width: 130px;
+}
+
+.clearbtn  {
+   border-radius: 5px;
+    height: 30px;
+    width: 115px;
+    background-color:#3cff01;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+
+.btndiv {
+    display:inline-flex;
+    width: 100%;
+    justify-content:space-evenly;
+}
+@keyframes glowing {
+    0% {
+      background-color: #f45f5d;
+      box-shadow: 0 0 5px #f45f5d;
+    }
+    50% {
+      background-color: #d40404;
+      box-shadow: 0 0 20px #d40404;
+    }
+    100% {
+      background-color: #f45f5d ;
+      box-shadow: 0 0 5px #f45f5d;
+    }
+  }
+  .backshadow2{
+    width:100%;
+    height: 85vh;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backshadow2 .custom-modal2{
+    border-radius:10px;
+    border:2px solid rgb(43, 173, 26);
+    overflow: hidden;
+    position: relative;
+    width: 50vh;
+    height: 583px;
+    background-color: rgb(7, 7, 7);
+    color:#0ef306;
+   
+}
+
+.delete-icon2{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.make{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 18vh;
+   
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 18vh;
+   
+}
+.vcolor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 18vh;
+   
+}
