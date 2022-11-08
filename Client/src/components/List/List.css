@@ -196,7 +196,6 @@
   border-radius: 10px;
   padding: 20px;
     height: auto;
-    right: 40vh;
     bottom:10vh;
     background-color: rgb(0, 0, 0);
     position: relative;
@@ -306,10 +305,13 @@ button {
 
 }
 .mbtn{
-  height:3.5vh;
-  width:30vh;
+  height:35px;
+  width:75%;
   border-radius: 5px;
 
+}
+.paysubmit{
+  width:120%
 }
 .room{
   width: 20vh;

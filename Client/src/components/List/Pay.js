@@ -98,7 +98,7 @@ function Pay({ pullId, setModal}) {
             </label>
         </div>
         <div className='bdiv'>
-        <button  className="mbtn"  type="submit"  onClick={handleSubmit} >Submit</button>
+        <button  className="mbtn paysubmit"  type="submit"  onClick={handleSubmit} >Submit</button>
         </div>
         </form>
     </div>

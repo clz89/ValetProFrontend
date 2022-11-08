@@ -4,7 +4,6 @@ import { deleteCar, createCar, updateCar } from "../../_actions/subCars";
 import { createPull, deletePull, updatePull } from "../../_actions/pulls";
 import { upForm } from "../../_actions/updateForm";
 import { useNavigate } from "react-router-dom";
-import Button from "./Button";
 import { upReset } from "../../_actions/updateForm";
 import { createOut, deleteOut } from "../../_actions/outnr";
 import { createComp, deleteComp } from "../../_actions/completed";
