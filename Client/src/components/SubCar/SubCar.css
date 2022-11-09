@@ -98,15 +98,30 @@ input, select {
 .backshadow2 .custom-modal2{
     border-radius:10px;
     border:2px solid rgb(43, 173, 26);
-    overflow: hidden;
     position: relative;
     width: 50vh;
     height: 583px;
     background-color: rgb(7, 7, 7);
     color:#0ef306;
-   
+    overflow-y: auto;
 }
-
+@media screen and (max-width: 500px) {
+    .backshadow2 .custom-modal2{
+        font-size: small;
+        border-radius:0px;
+    border:1px solid rgb(43, 173, 26);
+        position: relative;
+        margin:auto;
+        width: 100%;
+        top:5vh;
+        height:77vh;
+        position:fixed; 
+        background-color: rgb(7, 7, 7);
+        color:#0ef306;
+        overflow-y: auto;
+        padding-top: 2px;
+     }
+}
 .delete-icon2{
     width: 25px;
     height: 25px;
@@ -124,18 +139,23 @@ input, select {
     right: -15px;
 }
 .make{
-    height: 550px;
+    background-color: #0ef30600;
+    padding: 2px 2px;
+    height: 474px;
     width: 300px;
     font-size: small;
+    display: flex;
+    flex-direction: column;
   }
   .makediv{
-    display:flex;
-  
-  }
-  .vmakediv{
-  }
-  .vmakebtn{
-  }
+    }
+ 
+  .vmakedivK{
+ }
+ .vmakebtn{
+  border-radius: 10%;
+  border: 1px solid
+ }
 .price{
     display: flex;
     flex-direction: column;

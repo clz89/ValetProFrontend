@@ -62,7 +62,7 @@
       margin:auto;
       width: 100%;
       top:5vh;
-      height:85vh;
+      height:77vh;
       position:fixed;   
       overflow-y: auto; /* <!-- this is for horizontal scroll--> */ 
  
@@ -199,17 +199,25 @@
     background-color: rgb(0, 0, 0);
     position: relative;
     color: #fff;
+    font-size: small;
 
 }
 .tickinfomain{
   display: flex;
-  margin-right: 4px;
-  
+  padding:4px 4px;
+  padding-right: 10px;
+  border-radius: 3%;
+  border: 2px solid green;  
+  margin: 2px;
+  justify-content: space-evenly;
+
 }
 .tickinfo{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; 
+  
+ 
   
 }
 p{

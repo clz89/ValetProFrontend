@@ -117,10 +117,6 @@ const TabFooter = ({formTrue, setFormTrue, formT, setFormT, setSubCar}) => {
           Settings
      </button>
  </Link>
-    <button type="button"  value="1" className={formT ? 'ftabs btn-flash' : 'ftabs'} onClick={handleClick2}>
-          Add
-     </button>
-   
      </footer>
     );
 }

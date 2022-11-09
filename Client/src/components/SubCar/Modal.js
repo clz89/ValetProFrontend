@@ -10,7 +10,7 @@ const Modal = ({vehicle, setVehicle, modalid, setModal, setFormData, formData}) 
 
     const handleModal = () => {
         setModal(false)
-    }
+    } 
 
     const handleChange = event => {
         if(event.target.name!=="vcolor" && event.target.name!=="vmake"){
@@ -68,127 +68,119 @@ const Modal = ({vehicle, setVehicle, modalid, setModal, setFormData, formData}) 
                 </div>)}
 
                 {modalid==="vmake" &&(
-                <div className="make">
-                    <div className="vmakediv" >
+                <div className="make" onClick={handleModal}>
+                    <div  >
                     &nbsp;  A : &nbsp;
                     <button className="vmakebtn" name="vmake" value="Acura" onClick={handleChange}>Acura</button>
                     <button className="vmakebtn"  name="vmake"  value="Alfa Romeo" onClick={handleChange} >Alfa Romeo</button>
                     <button className="vmakebtn"  name="vmake"  value="Audi" onClick={handleChange} >Audi</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; B : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="BMW" onClick={handleChange} >BMW</button>
                     <button className="vmakebtn"  name="vmake"  value="Bentley" onClick={handleChange} >Bentley</button>
                     <button className="vmakebtn"  name="vmake"  value="Buick" onClick={handleChange} >Buick</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div  >
                     &nbsp; C : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Cadillac" onClick={handleChange} >Cadillac</button>
                     <button className="vmakebtn"  name="vmake"  value="Chevrolet" onClick={handleChange} >Chevrolet</button>
                     <button className="vmakebtn"  name="vmake"  value="Chrysler" onClick={handleChange} >Chrysler</button>
                     </div>
                     <div className="makediv">
-                    <div className="vmakediv" >
+                    <div  >
                     &nbsp;  D : &nbsp;
                     <button className="vmakebtn"    name="vmake"  value="Dodge" onClick={handleChange} >Dodge</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div  >
                     &nbsp; F : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Fiat" onClick={handleChange} >Fiat</button>
                     <button className="vmakebtn"  name="vmake"  value="Ford" onClick={handleChange} >Ford</button>
                     </div>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; G : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="GMC" onClick={handleChange} >GMC</button>
                     <button className="vmakebtn"  name="vmake"  value="Genesis" onClick={handleChange} >Genesis</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; H : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Honda" onClick={handleChange} >Honda</button>
                     <button className="vmakebtn"  name="vmake"  value="Hyundai" onClick={handleChange} >Hyundai</button>
                     </div>
                     <div className="makediv">
-                    <div className="vmakediv" >
-                    &nbsp; I : &nbsp;
+                    <div >
+                    &nbsp; I : &nbsp;&nbsp;&nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Infiniti" onClick={handleChange} >Infiniti</button>
                     </div>
-                    <div className="vmakediv" >
-                    &nbsp; J : &nbsp;
+                    <div >
+                    &nbsp;&nbsp;&nbsp; J : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Jaguar" onClick={handleChange} >Jaguar</button>
                     <button className="vmakebtn"  name="vmake"  value="Jeep" onClick={handleChange} >Jeep</button>
                     </div>
                     </div>
                     <div className="makediv">
-                    <div className="vmakediv" >
+                    <div className="vmakedivK" >
                     &nbsp;  K : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Kia" onClick={handleChange} >Kia</button>
                     </div>
                     
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; L : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Land Rover" onClick={handleChange} >Land Rover</button>
                     <button className="vmakebtn"  name="vmake"  value="Lexus" onClick={handleChange} >Lexus</button>
+                        
                     <button className="vmakebtn"  name="vmake"  value="Lincoln" onClick={handleChange} >Lincoln</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Lotus" onClick={handleChange} >Lotus</button>
                     </div>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; M : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Maserati" onClick={handleChange} >Maserati</button>
                     <button className="vmakebtn"  name="vmake"  value="Mazda" onClick={handleChange} >Mazda</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
                     <button className="vmakebtn"  name="vmake"  value="Mercedes-Benz" onClick={handleChange} >Mercedes-Benz</button>
                     <button className="vmakebtn"  name="vmake"  value="Mercury" onClick={handleChange} >Mercury</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
                     <button className="vmakebtn"  name="vmake"  value="Mini" onClick={handleChange} >Mini</button>
                     <button className="vmakebtn"  name="vmake"  value="Mitsubishi" onClick={handleChange} >Mitsubishi</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; N : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Nissan" onClick={handleChange} >Nissan</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; P : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Polestar" onClick={handleChange} >Polestar</button>
                     <button className="vmakebtn"  name="vmake"  value="Pontiac" onClick={handleChange} >Pontiac</button>
                     <button className="vmakebtn"  name="vmake"  value="Porsche" onClick={handleChange} >Porsche</button>
                     </div>
-                    <div className="vmakediv" >
-                    &nbsp;R : &nbsp;
+                    <div >
+                    &nbsp;&nbsp;R : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Ram" onClick={handleChange} >Ram</button> 
                     <button className="vmakebtn"  name="vmake"  value="Range-Rover" onClick={handleChange} >Range-Rover</button>                   
                     <button className="vmakebtn"  name="vmake"  value="Rivian" onClick={handleChange} >Rivian</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     
                     <button className="vmakebtn" name="vmake"  value="Rolls-Royce" onClick={handleChange} >Rolls-Royce</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; S : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Saab" onClick={handleChange} >Saab</button>
                     <button className="vmakebtn"  name="vmake"  value="Saturn" onClick={handleChange} >Saturn</button>
                     <button className="vmakebtn"  name="vmake"  value="Scion" onClick={handleChange} >Scion</button>
                     <button className="vmakebtn"  name="vmake"  value="Smart" onClick={handleChange} >Smart</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Subaru" onClick={handleChange} >Subaru</button>
                     <button className="vmakebtn"  name="vmake"  value="Suzuki" onClick={handleChange} >Suzuki</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                     &nbsp; T : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Tesla" onClick={handleChange} >Tesla</button>
                     <button className="vmakebtn"  name="vmake"  value="Toyota" onClick={handleChange} >Toyota</button>
                     </div>
-                    <div className="vmakediv" >
+                    <div >
                        &nbsp; V : &nbsp;
                     <button className="vmakebtn"  name="vmake"  value="Volkswagen" onClick={handleChange} >Volkswagen</button>
                     <button className="vmakebtn"  name="vmake"  value="Volvo" onClick={handleChange} >Volvo</button>
                         </div>
-
-                </div>)}
+                    </div>)}
 
                 {modalid==="price" &&(
                 <div className="price">
