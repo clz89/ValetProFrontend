@@ -124,13 +124,18 @@ input, select {
     right: -15px;
 }
 .make{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 30vh;
-    width: 18vh;
-   
-}
+    height: 550px;
+    width: 300px;
+    font-size: small;
+  }
+  .makediv{
+    display:flex;
+  
+  }
+  .vmakediv{
+  }
+  .vmakebtn{
+  }
 .price{
     display: flex;
     flex-direction: column;
@@ -143,7 +148,7 @@ input, select {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 30vh;
+    height: auto;
     width: 18vh;
    
 }

@@ -194,9 +194,8 @@
 
 .backshadow .custom-modal{
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px;
     height: auto;
-    bottom:10vh;
     background-color: rgb(0, 0, 0);
     position: relative;
     color: #fff;
@@ -237,7 +236,7 @@ p{
 button {
   color:rgb(0, 0, 0);
   background-color: #38a31e;
-  font-weight:700;
+  font-weight:500;
 
 }
 .idbtn{
