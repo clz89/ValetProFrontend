@@ -62,43 +62,43 @@ function Pay({ pullId, setModal}) {
     <form className="pay">
         <p>Pay Ticket</p>
         
-        <div >
+        <div className="paydiv">
             <label>
-                <input type="button" name="price" value={formData.price || ''} />
+                <button className="paybtn" value={formData.price || ''} >{formData.price || ''}</button>
             </label>
             <label>
-                <input type="button" name="price" value="$20" onClick={handleChange} />
+                <button className="paybtn" value="$20" onClick={handleChange} >$20</button>
             </label>
             <label>
-                <input type="button" name="price" value="$10" onClick={handleChange} />
+                <button className="paybtn" value="$10" onClick={handleChange} >$10</button>
             </label>
             <label>
-                <input type="button" name="price" value="$7" onClick={handleChange} />
+                <button className="paybtn" value="$7" onClick={handleChange} >$7</button>
             </label>
             <label>
-                <input type="button" name="price" value="$44" onClick={handleChange} />
+                <button className="paybtn" value="$44" onClick={handleChange} >$44</button>
             </label>
         </div>
         {pullId}
-        <div>
+        <div className="paydiv">
             <label>
-                <input type="button" name="payment" value={formData.payment || 'payment'} />
+                <button classsName="paybtn" value={formData.payment || 'payment'} >{formData.payment || 'payment'}</button>
             </label>
             <label>
-                <input type="button" name="payment" value="Cash" onClick={handleChange} />
+                <button classsName="paybtn" value="Cash" onClick={handleChange} >Cash</button>
             </label>
             <label>
-                <input type="button" name="payment" value="CreditCard" onClick={handleChange} />
+                <button classsName="paybtn" value="CreditCard" onClick={handleChange} >Credit</button>
             </label>
             <label>
-                <input type="button" name="payment" value="FrontDesk" onClick={handleChange} />
+                <button classsName="paybtn" value="FrontDesk" onClick={handleChange} >House</button>
             </label>
             <label>
-                <input type="button" name="payment" value="Bitcoin" onClick={handleChange} />
+                <button classsName="paybtn" value="Bitcoin" onClick={handleChange} >Bitcoin</button>
             </label>
         </div>
         <div className='bdiv'>
-        <button  className="mbtn paysubmit"  type="submit"  onClick={handleSubmit} >Submit</button>
+        <button  className="mbtn paysubmit"  type="submit"  onClick={handleSubmit} >Set to Paid</button>
         </div>
         </form>
     </div>

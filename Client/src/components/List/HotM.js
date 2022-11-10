@@ -109,7 +109,7 @@ const HotM = ({ pulldata, pullId, setModal, tableData}) => {
         
     return (
         <div className='backshadow' onClick={handleModal}>
-            <div className='custom-modal' onClick={(e) => e.stopPropagation()}>
+            <div className='backshadow custom-modal' onClick={(e) => e.stopPropagation()}>
             <div className="tickinfomain">
                 <div className="tickinfo">
                   <p>Ticket #:&nbsp; {pulldata.ticket}</p>

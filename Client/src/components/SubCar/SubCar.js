@@ -214,7 +214,7 @@ let o = Object.fromEntries(Object.entries(formData).filter(([_, v]) => v !== "")
         <Modal setModal={setModal}  {...{vehicle, setVehicle, modalid, formData, setFormData, setModal}}/>)}
          <div className='h1div'>
         <button className='clearbtn' onClick={handleScan}>Scanner</button>
-        <button className='clearbtn' onClick={handleSubCar}>Back</button>
+        <button className='clearbtn' onClick={handleSubCar}>Exit</button>
       </div>
       <form >
         <fieldset >

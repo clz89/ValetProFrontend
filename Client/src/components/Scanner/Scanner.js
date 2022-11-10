@@ -32,13 +32,13 @@ function Scanner({setSubCar, setScan}) {
     <div className="custom-modal3" onClick={(e) => e.stopPropagation()} >
     <div className="scanbdiv">
     <button className="scanbtn" onClick={() => setTorchOn(!torchOn)}>
-        Switch Torch {torchOn ? "Off" : "On"}</button>
+        Set Torch {torchOn ? "Off" : "On"}</button>
       <p>{camErr}</p>
-      <button className="scanbtn" onClick={handleSwitch}>Switch to Form</button>
+      <button className="scanbtn" onClick={handleSwitch}>Form</button>
       </div>
       <BarcodeScannerComponent
-        width={300}
-        height={300}
+        width={250}
+        height={250}
         torch={torchOn}
         onUpdate={(err, result) => {
           if (result) setData(result.text);

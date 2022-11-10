@@ -88,7 +88,7 @@ input, select {
   }
   .backshadow2{
     width:100%;
-    height: 85vh;
+    height: 100vh;
     position: fixed;
     background-color: rgba(0,0,0,0.7);
     display: flex;
@@ -109,7 +109,7 @@ input, select {
     .backshadow2 .custom-modal2{
         font-size: small;
         border-radius:0px;
-    border:1px solid rgb(43, 173, 26);
+        border:0px solid rgb(43, 173, 26);
         position: relative;
         margin:auto;
         width: 100%;
@@ -153,8 +153,7 @@ input, select {
   .vmakedivK{
  }
  .vmakebtn{
-  border-radius: 10%;
-  border: 1px solid
+ 
  }
 .price{
     display: flex;
