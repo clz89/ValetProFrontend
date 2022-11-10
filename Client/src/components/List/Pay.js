@@ -40,7 +40,7 @@ function Pay({ pullId, setModal}) {
         if(formData._id === post._id){     
           setFormData({
             name: event.target.name,
-            value: event.target.type === 'checkbox' ? event.target.checked : event.target.value
+            value: event.target.value
           })}}; 
 
       const handleSubmit = (e) => {
@@ -64,41 +64,41 @@ function Pay({ pullId, setModal}) {
         
         <div className="paydiv">
             <label>
-                <button className="paybtn" value={formData.price || ''} >{formData.price || ''}</button>
+                <button type="button" className="paybtn" name="price" value={formData.price || ''} >{formData.price || ''}</button>
             </label>
             <label>
-                <button className="paybtn" value="$20" onClick={handleChange} >$20</button>
+                <button type="button" className="paybtn" name="price" value="$20" onClick={handleChange} >$20</button>
             </label>
             <label>
-                <button className="paybtn" value="$10" onClick={handleChange} >$10</button>
+                <button type="button" className="paybtn" name="price" value="$10" onClick={handleChange} >$10</button>
             </label>
             <label>
-                <button className="paybtn" value="$7" onClick={handleChange} >$7</button>
+                <button type="button" className="paybtn" name="price" value="$7" onClick={handleChange} >$7</button>
             </label>
             <label>
-                <button className="paybtn" value="$44" onClick={handleChange} >$44</button>
+                <button type="button" className="paybtn" name="price" value="$44" onClick={handleChange} >$44</button>
             </label>
         </div>
         {pullId}
         <div className="paydiv">
             <label>
-                <button classsName="paybtn" value={formData.payment || 'payment'} >{formData.payment || 'payment'}</button>
+                <button type="button" classsName="paybtn" name="payment" value={formData.payment || 'payment'} >{formData.payment || 'payment'}</button>
             </label>
             <label>
-                <button classsName="paybtn" value="Cash" onClick={handleChange} >Cash</button>
+                <button type="button" classsName="paybtn" name="payment" value="Cash" onClick={handleChange} >Cash</button>
             </label>
             <label>
-                <button classsName="paybtn" value="CreditCard" onClick={handleChange} >Credit</button>
+                <button type="button" classsName="paybtn" name="payment" value="CreditCard" onClick={handleChange} >Credit</button>
             </label>
             <label>
-                <button classsName="paybtn" value="FrontDesk" onClick={handleChange} >House</button>
+                <button type="button" classsName="paybtn" name="payment"  value="FrontDesk" onClick={handleChange} >House</button>
             </label>
             <label>
-                <button classsName="paybtn" value="Bitcoin" onClick={handleChange} >Bitcoin</button>
+                <button type="button" classsName="paybtn" name="payment" value="Bitcoin" onClick={handleChange} >Bitcoin</button>
             </label>
         </div>
         <div className='bdiv'>
-        <button  className="mbtn paysubmit"  type="submit"  onClick={handleSubmit} >Set to Paid</button>
+        <button className="mbtn paysubmit"  type="submit"  onClick={handleSubmit} >Set to Paid</button>
         </div>
         </form>
     </div>
